@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><Policy ID="78dc4443-8e31-469a-9e7e-147bbcd353a7" Name="Enable and Record Bitlocker Keys" Description="VGhpcyB3aWxsIHR1cm4gb24gYml0bG9ja2VyIG91dHB1dCB0aGUga2V5cyBmb3IgdGhlIGZpcnN0IDcgZml4ZWQgZHJpdmVzIGl0IGZpbmRzLiAgVGhpcyB3aWxsIG5vdCBydW4gb24gVVNCIGRyaXZlcy4=" Version="2.19.0.1" MinRequiredVersion="2.19.0.1" RemoteCategory="0" ExecutionType="Local" MinimumPSVersionRequired="3.0">
+  <Object ID="{1852668b-06a4-426a-9784-1e4ea524147e}" Type="{B6FA6D8B-EEAA-47A6-8463-7F9A4F5BBB6E}" Data="&lt;xml&gt;&lt;OutputParameters&gt;&lt;Parameter ParameterName=&quot;oda&quot; Label=&quot;Encrypted Drive Found - 1 - Name:&quot; ParameterType=&quot;string&quot; Value=&quot;Run PowerShell Script.scoutda&quot; /&gt;&lt;Parameter ParameterName=&quot;oka&quot; Label=&quot;Encrypted Drive Found - 1 - Key:&quot; ParameterType=&quot;string&quot; Value=&quot;Run PowerShell Script.scoutka&quot; /&gt;&lt;Parameter ParameterName=&quot;opa&quot; Label=&quot;Encrypted Drive Found - 1 - Identifier&quot; ParameterType=&quot;string&quot; Value=&quot;Run PowerShell Script.scoutpa&quot; /&gt;&lt;Parameter ParameterName=&quot;odb&quot; Label=&quot;Encrypted Drive Found - 2 - Name:&quot; ParameterType=&quot;string&quot; Value=&quot;Run PowerShell Script.scoutdb&quot; /&gt;&lt;Parameter ParameterName=&quot;okb&quot; Label=&quot;Encrypted Drive Found - 2 - Key:&quot; ParameterType=&quot;string&quot; Value=&quot;Run PowerShell Script.scoutkb&quot; /&gt;&lt;Parameter ParameterName=&quot;opb&quot; Label=&quot;Encrypted Drive Found - 2 - Identifier&quot; ParameterType=&quot;string&quot; Value=&quot;Run PowerShell Script.scoutpb&quot; /&gt;&lt;Parameter ParameterName=&quot;odc&quot; Label=&quot;Encrypted Drive Found - 3 - Name:&quot; ParameterType=&quot;string&quot; Value=&quot;Run PowerShell Script.scoutdc&quot; /&gt;&lt;Parameter ParameterName=&quot;okc&quot; Label=&quot;Encrypted Drive Found - 3 - Key:&quot; ParameterType=&quot;string&quot; Value=&quot;Run PowerShell Script.scoutkc&quot; /&gt;&lt;Parameter ParameterName=&quot;opc&quot; Label=&quot;Encrypted Drive Found - 3 - Identifier&quot; ParameterType=&quot;string&quot; Value=&quot;Run PowerShell Script.scoutpc&quot; /&gt;&lt;Parameter ParameterName=&quot;odd&quot; Label=&quot;Encrypted Drive Found - 4 - Name:&quot; ParameterType=&quot;string&quot; Value=&quot;Run PowerShell Script.scoutdd&quot; /&gt;&lt;Parameter ParameterName=&quot;okd&quot; Label=&quot;Encrypted Drive Found - 4 - Key:&quot; ParameterType=&quot;string&quot; Value=&quot;Run PowerShell Script.scoutkd&quot; /&gt;&lt;Parameter ParameterName=&quot;opd&quot; Label=&quot;Encrypted Drive Found - 4 - Identifier&quot; ParameterType=&quot;string&quot; Value=&quot;Run PowerShell Script.scoutpd&quot; /&gt;&lt;Parameter ParameterName=&quot;ode&quot; Label=&quot;Encrypted Drive Found - 5 - Name:&quot; ParameterType=&quot;string&quot; Value=&quot;Run PowerShell Script.scoutde&quot; /&gt;&lt;Parameter ParameterName=&quot;oke&quot; Label=&quot;Encrypted Drive Found - 5 - Key:&quot; ParameterType=&quot;string&quot; Value=&quot;Run PowerShell Script.scoutke&quot; /&gt;&lt;Parameter ParameterName=&quot;ope&quot; Label=&quot;Encrypted Drive Found - 5 - Identifier&quot; ParameterType=&quot;string&quot; Value=&quot;Run PowerShell Script.scoutpe&quot; /&gt;&lt;Parameter ParameterName=&quot;odf&quot; Label=&quot;Encrypted Drive Found - 6 Name:&quot; ParameterType=&quot;string&quot; Value=&quot;Run PowerShell Script.scoutdf&quot; /&gt;&lt;Parameter ParameterName=&quot;okf&quot; Label=&quot;Encrypted Drive Found - 6 - Key:&quot; ParameterType=&quot;string&quot; Value=&quot;Run PowerShell Script.scoutkf&quot; /&gt;&lt;Parameter ParameterName=&quot;opf&quot; Label=&quot;Encrypted Drive Found - 6 - Identifier&quot; ParameterType=&quot;string&quot; Value=&quot;Run PowerShell Script.scoutpf&quot; /&gt;&lt;Parameter ParameterName=&quot;odg&quot; Label=&quot;Encrypted Drive Found - 7 - Name:&quot; ParameterType=&quot;string&quot; Value=&quot;Run PowerShell Script.scoutdg&quot; /&gt;&lt;Parameter ParameterName=&quot;okg&quot; Label=&quot;Encrypted Drive Found - 7 - Key:&quot; ParameterType=&quot;string&quot; Value=&quot;Run PowerShell Script.scoutkg&quot; /&gt;&lt;Parameter ParameterName=&quot;opg&quot; Label=&quot;Encrypted Drive Found - 7 - Identifier&quot; ParameterType=&quot;string&quot; Value=&quot;Run PowerShell Script.scoutpg&quot; /&gt;&lt;/OutputParameters&gt;&lt;GlobalVariables&gt;&lt;Parameter ParameterName=&quot;VolumeStartedEncrypting&quot; Label=&quot;VolumeStartedEncrypting&quot; ParameterType=&quot;string&quot; Value=&quot;False&quot; /&gt;&lt;/GlobalVariables&gt;&lt;/xml&gt;" />
+  <LinkManager xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/PolicyExecutor">
+    <hashset xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>dd5b19ab-cb4b-401e-ae5c-1231727285ab.scoutda</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3></d2p1:m_Item3>
+        <d2p1:m_Item4>oda</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>dd5b19ab-cb4b-401e-ae5c-1231727285ab.scoutka</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3></d2p1:m_Item3>
+        <d2p1:m_Item4>oka</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>dd5b19ab-cb4b-401e-ae5c-1231727285ab.scoutdb</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3></d2p1:m_Item3>
+        <d2p1:m_Item4>odb</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>dd5b19ab-cb4b-401e-ae5c-1231727285ab.scoutkb</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3></d2p1:m_Item3>
+        <d2p1:m_Item4>okb</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>dd5b19ab-cb4b-401e-ae5c-1231727285ab.scoutdc</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3></d2p1:m_Item3>
+        <d2p1:m_Item4>odc</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>dd5b19ab-cb4b-401e-ae5c-1231727285ab.scoutkc</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3></d2p1:m_Item3>
+        <d2p1:m_Item4>okc</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>dd5b19ab-cb4b-401e-ae5c-1231727285ab.scoutdd</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3></d2p1:m_Item3>
+        <d2p1:m_Item4>odd</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>dd5b19ab-cb4b-401e-ae5c-1231727285ab.scoutkd</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3></d2p1:m_Item3>
+        <d2p1:m_Item4>okd</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>dd5b19ab-cb4b-401e-ae5c-1231727285ab.scoutde</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3></d2p1:m_Item3>
+        <d2p1:m_Item4>ode</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>dd5b19ab-cb4b-401e-ae5c-1231727285ab.scoutke</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3></d2p1:m_Item3>
+        <d2p1:m_Item4>oke</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>dd5b19ab-cb4b-401e-ae5c-1231727285ab.scoutdf</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3></d2p1:m_Item3>
+        <d2p1:m_Item4>odf</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>dd5b19ab-cb4b-401e-ae5c-1231727285ab.scoutkf</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3></d2p1:m_Item3>
+        <d2p1:m_Item4>okf</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>dd5b19ab-cb4b-401e-ae5c-1231727285ab.scoutdg</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3></d2p1:m_Item3>
+        <d2p1:m_Item4>odg</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>dd5b19ab-cb4b-401e-ae5c-1231727285ab.scoutkg</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3></d2p1:m_Item3>
+        <d2p1:m_Item4>okg</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>dd5b19ab-cb4b-401e-ae5c-1231727285ab.scoutpa</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3></d2p1:m_Item3>
+        <d2p1:m_Item4>opa</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>dd5b19ab-cb4b-401e-ae5c-1231727285ab.scoutpb</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3></d2p1:m_Item3>
+        <d2p1:m_Item4>opb</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>dd5b19ab-cb4b-401e-ae5c-1231727285ab.scoutpc</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3></d2p1:m_Item3>
+        <d2p1:m_Item4>opc</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>dd5b19ab-cb4b-401e-ae5c-1231727285ab.scoutpd</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3></d2p1:m_Item3>
+        <d2p1:m_Item4>opd</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>dd5b19ab-cb4b-401e-ae5c-1231727285ab.scoutpe</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3></d2p1:m_Item3>
+        <d2p1:m_Item4>ope</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>dd5b19ab-cb4b-401e-ae5c-1231727285ab.scoutpf</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3></d2p1:m_Item3>
+        <d2p1:m_Item4>opf</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>dd5b19ab-cb4b-401e-ae5c-1231727285ab.scoutpg</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3></d2p1:m_Item3>
+        <d2p1:m_Item4>opg</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+    </hashset>
+  </LinkManager>
+  <Diagnostics OriginalVersion="2.70.0.4" />
+  <Activity mc:Ignorable="sads sap" x:Class="Policy Builder" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="clr-namespace:PolicyExecutor;assembly=PolicyExecutionEngine" xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <x:Members>
+      <x:Property Name="PolicyGUID" Type="InArgument(x:String)" />
+    </x:Members>
+    <sap:VirtualizedContainerService.HintSize>714,4538</sap:VirtualizedContainerService.HintSize>
+    <mva:VisualBasic.Settings>Assembly references and imported namespaces serialized as XML namespaces</mva:VisualBasic.Settings>
+    <p:PolicySequence DisplayName="Policy Builder" sap:VirtualizedContainerService.HintSize="714,4538" MinRequiredVersion="2.19.0.1" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces">
+      <p:PolicySequence.Activities>
+        <p:RunPowerShellScript AssemblyName="PolicyExecutionEngine, Version=2.50.0.3, Culture=neutral, PublicKeyToken=null" DisplayName="Run PowerShell Script" sap:VirtualizedContainerService.HintSize="678,522" MinRequiredVersion="2.10.0.19" Moniker="1fc06982-9498-4821-b38d-13f70c8fb133" OutPut_64="[RunPowerShellScript_OutPut_64_2]" Result="[RunPowerShellScript_Result_2]" ResultString="[RunPowerShellScript_ResultString_2]" Results_x64="[RunPowerShellScript_Results_x64_2]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" TypeName="RunPowerShellScript" genArgEvent="794649b3-3be7-4198-8410-f82c26106bbb" m_bTextLinkChange="False" script="IwBXAGUAIAB3AGEAbgB0ACAAdABvACAAYwBoAGUAYwBrACAAaQBmACAAdABoAGUAcgBlACAAaQBzACAAYQAgAFQAUABNACAAYwBoAGkAcAAgAHAAcgBlAHMAZQBuAHQALAAgAGIAZQBjAGEAdQBzAGUAIABpAGYAIABuAG8AdAAgAHcAZQAgAEQATwAgAE4ATwBUACAAdwBhAG4AdAAgAHQAbwAgAHQAcgB5ACAAYQBuAGQAIABlAG4AYQBiAGwAZQAgAGIAaQB0AGwAbwBjAGsAZQByACAAYQBuAHkAdwBoAGUAcgBlAA0ACgANAAoAJABUAFAATQBQAHIAZQBzAGUAbgB0ACAAPQAgACIAZgBhAGwAcwBlACIADQAKAA0ACgBpAGYAIAAoACgAZwBlAHQALQB0AHAAbQApAC4AdABwAG0AcAByAGUAcwBlAG4AdAApAA0ACgB7AA0ACgAgACAAIAAgACAAJABUAFAATQBQAHIAZQBzAGUAbgB0ACAAPQAgACIAdAByAHUAZQAiAA0ACgB9ACAAZQBsAHMAZQAgAHsADQAKACAAIAAgACAAIAAkAFQAUABNAFAAcgBlAHMAZQBuAHQAIAA9ACAAIgBmAGEAbABzAGUAIgANAAoAIAAgACAAIAAgAFcAcgBpAHQAZQAtAE8AdQB0AHAAdQB0ACAAIgBOAG8AIABUAFAATQAgAC0AIABFAHgAaQB0AGkAbgBnACIADQAKAH0A">
+          <p:RunPowerShellScript.InArgs>
+            <scg:Dictionary x:TypeArguments="x:String, p:InArg" />
+          </p:RunPowerShellScript.InArgs>
+          <p:RunPowerShellScript.OutArgs>
+            <p:OutArg x:Key="TPMPresent" ArgType="string" DisplayName="TPM Present" Name="TPMPresent">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:String">[RunPowerShellScript_TPMPresent]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+          </p:RunPowerShellScript.OutArgs>
+        </p:RunPowerShellScript>
+        <p:IfObject CaseSensitive_ItemProp="{x:Null}" Condition_ItemProp="{x:Null}" Value_Item="{x:Null}" Value_ItemProp="{x:Null}" Variable_ItemProp="{x:Null}" VerboseOutput_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.50.0.3, Culture=neutral, PublicKeyToken=null" CaseSensitive="False" CaseSensitive_DisplayArg="false" CaseSensitive_Item="{x:Null}" Condition="equals" Condition_DisplayArg="equals" Condition_Item="{x:Null}" DisplayName="If" sap:VirtualizedContainerService.HintSize="678,2640" MinRequiredVersion="2.19.0.1" Moniker="22b999a8-c83b-410d-98ff-d2ff4a161bf6" Result="[IfObject_Result_2]" ResultString="[IfObject_ResultString_2]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="None" TypeName="IfObject" Value_DisplayArg="true" Value_Type="x:String" Variable="[RunPowerShellScript_TPMPresent]" Variable_DisplayArg="Run PowerShell Script.TPM Present" Variable_Item="{x:Null}" Variable_Type="x:String" VerboseOutput="False" VerboseOutput_DisplayArg="" VerboseOutput_Item="{x:Null}" m_bTextLinkChange="False">
+          <p:IfObject.IfOption>
+            <p:SequenceActivity DisplayName="Then" sap:VirtualizedContainerService.HintSize="646,2367" Name="SequenceActivity">
+              <p:SequenceActivity.Activities>
+                <p:LogicalDisk AssemblyName="PolicyExecutionEngine, Version=2.50.0.3, Culture=neutral, PublicKeyToken=null" DisplayName="Get Logical Disk Information" sap:VirtualizedContainerService.HintSize="608,81" LogicalDiskInfo="[LogicalDisk_LogicalDiskInfo_1]" MinRequiredVersion="2.10.0.19" Moniker="b95979be-c82f-431d-bf34-84e69d1fc275" Result="[LogicalDisk_Result_1]" ResultString="[LogicalDisk_ResultString_1]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" TypeName="LogicalDisk" m_bTextLinkChange="False">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </p:LogicalDisk>
+                <p:ForEachLoop CollectionName_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.50.0.3, Culture=neutral, PublicKeyToken=null" CollectionName="[LogicalDisk_LogicalDiskInfo_1]" CollectionName_DisplayArg="Get Logical Disk Information.LogiclDiskInfo" CollectionName_Item="{x:Null}" DisplayName="ForEach" sap:VirtualizedContainerService.HintSize="608,2096" ItemValue="[ForEachLoop_ItemValue]" MinRequiredVersion="2.10.0.19" Moniker="30b6a516-3ca9-4ba4-a940-00201ecea81d" Result="[ForEachLoop_Result]" ResultString="[ForEachLoop_ResultString]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" TypeName="ForEachLoop" m_bTextLinkChange="False">
+                  <p:ForEachLoop.Each>
+                    <p:ForEachSequence DisplayName="Each" sap:VirtualizedContainerService.HintSize="576,1996">
+                      <p:ForEachSequence.Activities>
+                        <p:Log Message_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.70.0.4, Culture=neutral, PublicKeyToken=null" DisplayName="Log" sap:VirtualizedContainerService.HintSize="538,88" LogMessage="[Log_LogMessage_1]" Message="At top of for each loop, about to show logical disk info" Message_DisplayArg="At top of for each loop, about to show logical disk info" Message_Item="{x:Null}" MinRequiredVersion="2.10.0.19" Moniker="5f51b525-92d8-4bd7-9e75-552f0f3a4741" Result="[Log_Result_1]" ResultString="[Log_ResultString_1]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" TypeName="Log" m_bTextLinkChange="False" />
+                        <p:Log Message_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.50.0.3, Culture=neutral, PublicKeyToken=null" DisplayName="Log" sap:VirtualizedContainerService.HintSize="538,88" LogMessage="[Log_LogMessage]" Message="[LogicalDisk_ResultString_1]" Message_DisplayArg="Get Logical Disk Information.Result String" Message_Item="{x:Null}" MinRequiredVersion="2.10.0.19" Moniker="a8870a91-d111-47aa-a670-40190b90ada9" Result="[Log_Result]" ResultString="[Log_ResultString]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" TypeName="Log" m_bTextLinkChange="False" />
+                        <p:IfObject CaseSensitive_ItemProp="{x:Null}" Condition_ItemProp="{x:Null}" Value_Item="{x:Null}" Value_ItemProp="{x:Null}" VerboseOutput_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.50.0.3, Culture=neutral, PublicKeyToken=null" CaseSensitive="True" CaseSensitive_DisplayArg="true" CaseSensitive_Item="{x:Null}" Condition="equals" Condition_DisplayArg="equals" Condition_Item="{x:Null}" DisplayName="If" sap:VirtualizedContainerService.HintSize="538,1590" MinRequiredVersion="2.19.0.1" Moniker="832653bd-4cc3-49bb-a2cd-5ba197e51447" Result="[IfObject_Result_1]" ResultString="[IfObject_ResultString_1]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="None" TypeName="IfObject" Value_DisplayArg="3" Value_Type="x:String" Variable="{x:Null}" Variable_DisplayArg="ForEach.Get Logical Disk Information.LogiclDiskInfo.Drive Type" Variable_Item="[ForEachLoop_ItemValue]" Variable_ItemProp="DriveType" Variable_Type="x:String" VerboseOutput="True" VerboseOutput_DisplayArg="" VerboseOutput_Item="{x:Null}" m_bTextLinkChange="False">
+                          <p:IfObject.IfOption>
+                            <p:SequenceActivity DisplayName="Then" sap:VirtualizedContainerService.HintSize="506,1317" Name="SequenceActivity">
+                              <p:SequenceActivity.Activities>
+                                <p:RunPowerShellScript AssemblyName="PolicyExecutionEngine, Version=2.50.0.3, Culture=neutral, PublicKeyToken=null" DisplayName="Run PowerShell Script" sap:VirtualizedContainerService.HintSize="468,522" MinRequiredVersion="2.10.0.19" Moniker="2c1f483c-2338-48c4-ad4f-19ac8d2cc31c" OutPut_64="[RunPowerShellScript_OutPut_64_1]" Result="[RunPowerShellScript_Result_1]" ResultString="[RunPowerShellScript_ResultString_1]" Results_x64="[RunPowerShellScript_Results_x64_1]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" TypeName="RunPowerShellScript" genArgEvent="8227be33-4c46-40db-ab88-e7194c3f88bd" m_bTextLinkChange="False" script="JABiAGkAdABsAG8AYwBrAGUAcgBTAHQAYQB0AHUAcwAgAD0AIABHAGUAdAAtAEIAaQB0AEwAbwBjAGsAZQByAFYAbwBsAHUAbQBlACAALQBNAG8AdQBuAHQAcABvAGkAbgB0ACAAJABEAHIAaQB2AGUAIAB8ACAAUwBlAGwAZQBjAHQALQBPAGIAagBlAGMAdAAgAC0ARQB4AHAAYQBuAGQAUAByAG8AcABlAHIAdAB5ACAAUAByAG8AdABlAGMAdABpAG8AbgBTAHQAYQB0AHUAcwANAAoAJAB2AG8AbAB1AG0AZQBTAHQAYQB0AHUAcwAgAD0AIABHAGUAdAAtAEIAaQB0AEwAbwBjAGsAZQByAFYAbwBsAHUAbQBlACAALQBNAG8AdQBuAHQAcABvAGkAbgB0ACAAJABEAHIAaQB2AGUAIAB8ACAAUwBlAGwAZQBjAHQALQBPAGIAagBlAGMAdAAgAC0ARQB4AHAAYQBuAGQAUAByAG8AcABlAHIAdAB5ACAAVgBvAGwAdQBtAGUAUwB0AGEAdAB1AHMADQAKAA0ACgAjAGMAaABlAGMAawAgAHQAbwAgAG0AYQBrAGUAIABzAHUAcgBlACAAYgBpAHQAbABvAGMAawBlAHIAIABpAHMAIABlAGkAdABoAGUAcgAgAG8AZgBmACAAbwByACAAdABoAGUAIABlAG4AYwByAHkAcAB0AGkAbwBuACAAaQBzACAAaQBuACAAcAByAG8AZwByAGUAcwBzAC4ADQAKAGkAZgAgACgAJABiAGkAdABsAG8AYwBrAGUAcgBTAHQAYQB0AHUAcwAgAC0AZQBxACAAIgBPAGYAZgAiACAALQBhAG4AZAAgACQAdgBvAGwAdQBtAGUAUwB0AGEAdAB1AHMAIAAtAG4AZQAgACIARQBuAGMAcgB5AHAAdABpAG8AbgBJAG4AUAByAG8AZwByAGUAcwBzACIAIAApAA0ACgB7AA0ACgAgACAAIAAgACAAIAAgACAAIwBjAGgAZQBjAGsAcwAgAHQAbwAgAHMAZQBlACAAaQBmACAAdABoAGUAIABUAFAATQAgAGMAaABpAHAAIABpAHMAIABhAGMAdABpAHYAZQAgAGEAbgAgAGkAZgAgAG4AbwB0ACAAaQBuAHQAaQBhAGwAaQB6AGUAcwAgAGkAdAAuAA0ACgAgACAAIAAgACQAdABwAG0AIAA9ACAARwBlAHQALQBUAFAATQANAAoAIAAgACAAIABpAGYAIAAoACEAJAB0AHAAbQAuAFQAcABtAEEAYwB0AGkAdgBhAHQAZQBkACkADQAKACAAIAAgACAAewANAAoAIAAgACAAIAAgACAAIAAgAGkAZgAgACgAJAB0AHAAbQAuAFQAcABtAFAAcgBlAHMAZQBuAHQAKQANAAoAIAAgACAAIAAgACAAIAAgAHsADQAKACAAIAAgACAAIAAgACAAIAAgACAAIAAgAEkAbgBpAHQAaQBhAGwAaQB6AGUALQBUAHAAbQAgAC0AQQBsAGwAbwB3AEMAbABlAGEAcgANAAoAIAAgACAAIAAgACAAIAAgAH0ADQAKACAAIAAgACAAfQANAAoADQAKACAAIAAgACAAIwBJAGYAIABCAGkAdABsAG8AYwBrAGUAcgAgAGgAYQBzACAAYgBlAGUAbgAgAHQAdQByAG4AZQBkACAAbwBuACwAIABiAHUAdAAgAGgAYQBzAG4AJwB0ACAAYwBvAG0AcABsAGUAdABlAGQAIABlAG4AYwByAHkAcAB0AGkAbgBnACAAeQBlAHQAIAB0AGgAZQBuACAAaQB0ACAAdwBpAGwAbAAgAHMAaABvAHcAIABhAHMAIABPAGYAZgANAAoAIAAgACAAIAAkAGsAZQB5AFAAcgBvAHQAZQBjAHQAbwByAHMAIAA9ACAARwBlAHQALQBCAGkAdABMAG8AYwBrAGUAcgBWAG8AbAB1AG0AZQAgAC0ATQBvAHUAbgB0AHAAbwBpAG4AdAAgACQARAByAGkAdgBlACAAfAAgAFMAZQBsAGUAYwB0AC0ATwBiAGoAZQBjAHQAIAAtAEUAeABwAGEAbgBkAFAAcgBvAHAAZQByAHQAeQAgAEsAZQB5AFAAcgBvAHQAZQBjAHQAbwByAA0ACgAgACAAIAAgACMARQBuAGEAYgBsAGUAIABiAGkAdABsAG8AYwBrAGUAcgANAAoAIAAgACAAIABpAGYAIAAoACQARAByAGkAdgBlACAALQBlAHEAIAAiAEMAOgAiACkADQAKACAAIAAgACAAewANAAoAIAAgACAAIAAjAEkAZgAgAGkAdAAgAGkAcwAgAHQAaABlACAAQwAgAGQAcgBpAHYAZQAgAHQAaABlAG4AIAB3AGUAIAB3AGEAbgB0ACAAdABvACAAdQBzAGUAIAB0AGgAZQAgAFQAUABNACAAdABvACAAdQBuAGwAbwBjAGsADQAKACAAIAAgACAAIAAgACAAIAAgAEUAbgBhAGIAbABlAC0AQgBpAHQATABvAGMAawBlAHIAIAAtAE0AbwB1AG4AdABQAG8AaQBuAHQAIAAgACQARAByAGkAdgBlACAALQBFAG4AYwByAHkAcAB0AGkAbwBuAE0AZQB0AGgAbwBkACAAWAB0AHMAQQBlAHMAMgA1ADYAIAAtAFUAcwBlAGQAUwBwAGEAYwBlAE8AbgBsAHkAIAAtAFMAawBpAHAASABhAHIAZAB3AGEAcgBlAFQAZQBzAHQAIAAtAFQAcABtAFAAcgBvAHQAZQBjAHQAbwByAA0ACgAgACAAIAAgACAAIAAgACAAIABpAGYAIAAoACQAawBlAHkAUAByAG8AdABlAGMAdABvAHIAcwAgAC0AYwBsAGkAawBlACAAIgBSAGUAYwBvAHYAZQByAHkAUABhAHMAcwB3AG8AcgBkACIAKQAgAHsADQAKACAAIAAgACAAIAAgACAAIAAgACAAIAAgAFcAcgBpAHQAZQAtAE8AdQB0AHAAdQB0ACAAIgBBAGwAcgBlAGEAZAB5ACAAaABhAHMAIABhACAAUgBlAGMAbwB2AGUAcgB5ACAAUABhAHMAcwB3AG8AcgBkACIADQAKACAAIAAgACAAIAAgACAAIAAgAH0AIABlAGwAcwBlACAAewANAAoAIAAgACAAIAAgACAAIAAgACAAIAAgAEcAZQB0AC0AQgBpAHQATABvAGMAawBlAHIAVgBvAGwAdQBtAGUAIAAtAE0AbwB1AG4AdABQAG8AaQBuAHQAIAAgACQARAByAGkAdgBlAHwAIABBAGQAZAAtAEIAaQB0AEwAbwBjAGsAZQByAEsAZQB5AFAAcgBvAHQAZQBjAHQAbwByACAALQBSAGUAYwBvAHYAZQByAHkAUABhAHMAcwB3AG8AcgBkAFAAcgBvAHQAZQBjAHQAbwByAA0ACgAgACAAIAAgACAAIAAgACAAfQANAAoAIAAgACAAIAB9ACAAZQBsAHMAZQAgAHsADQAKACAAIAAgACAAIwBBAG4AeQB0AGgAaQBuAGcAIABvAHQAaABlAHIAIAB0AGgAYQBuACAAQwAgAHUAcwBlACAAdABoAGUAIABlAHgAdABlAHIAbgBhAGwAIABrAGUAeQAgACgAYQBrAGEAIABTAHQAYQByAHQAdQBwAEsAZQB5AFAAcgBvAHQAZQBjAHQAbwByACkAIABBAE4ARAAgAGgAYQB2AGUAIABpAHQAIABhAHUAdABvAC0AdQBuAGwAbwBjAGsALgANAAoAIAAgACAAIAAgACAAIAAgACAARQBuAGEAYgBsAGUALQBCAGkAdABMAG8AYwBrAGUAcgAgAC0ATQBvAHUAbgB0AFAAbwBpAG4AdAAgACAAJABEAHIAaQB2AGUAIAAtAEUAbgBjAHIAeQBwAHQAaQBvAG4ATQBlAHQAaABvAGQAIABYAHQAcwBBAGUAcwAyADUANgAgAC0AVQBzAGUAZABTAHAAYQBjAGUATwBuAGwAeQAgAC0AUwBrAGkAcABIAGEAcgBkAHcAYQByAGUAVABlAHMAdAAgAC0AUgBlAGMAbwB2AGUAcgB5AFAAYQBzAHMAdwBvAHIAZABQAHIAbwB0AGUAYwB0AG8AcgANAAoAIAAgACAAIAAgACAAIAAgACAARQBuAGEAYgBsAGUALQBCAGkAdABMAG8AYwBrAGUAcgBBAHUAdABvAFUAbgBsAG8AYwBrACAALQBNAG8AdQBuAHQAUABvAGkAbgB0ACAAJABEAHIAaQB2AGUADQAKACAAIAAgACAAfQANAAoAIAAgACAAIAAkAGQAcgBpAHYAZQBFAG4AYwByAHkAcAB0AGUAZAAgAD0AIAAiAFQAcgB1AGUAIgANAAoAIAB9AA0ACgANAAoA">
+                                  <p:RunPowerShellScript.InArgs>
+                                    <p:InArg Arg="{x:Null}" x:Key="Drive" ArgType="string" DisplayArg="ForEach.Get Logical Disk Information.LogiclDiskInfo.Device ID" DisplayName="Drive or Mount Point" ItemProp="DeviceID" Name="Drive" isRequired="False">
+                                      <p:InArg.Item>
+                                        <InArgument x:TypeArguments="x:Object">[ForEachLoop_ItemValue]</InArgument>
+                                      </p:InArg.Item>
+                                    </p:InArg>
+                                  </p:RunPowerShellScript.InArgs>
+                                  <p:RunPowerShellScript.OutArgs>
+                                    <p:OutArg x:Key="driveEncrypted" ArgType="string" DisplayName="Did a Drive Encrypt?" Name="driveEncrypted">
+                                      <p:OutArg.Arg>
+                                        <OutArgument x:TypeArguments="x:String">[RunPowerShellScript_driveEncrypted]</OutArgument>
+                                      </p:OutArg.Arg>
+                                    </p:OutArg>
+                                  </p:RunPowerShellScript.OutArgs>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </p:RunPowerShellScript>
+                                <p:IfObject CaseSensitive_ItemProp="{x:Null}" Condition_ItemProp="{x:Null}" Value_Item="{x:Null}" Value_ItemProp="{x:Null}" Variable_ItemProp="{x:Null}" VerboseOutput_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.70.0.4, Culture=neutral, PublicKeyToken=null" CaseSensitive="True" CaseSensitive_DisplayArg="false" CaseSensitive_Item="{x:Null}" Condition="equals" Condition_DisplayArg="equals" Condition_Item="{x:Null}" DisplayName="If" sap:VirtualizedContainerService.HintSize="468,605" MinRequiredVersion="2.19.0.1" Moniker="91720ca7-47de-44b7-b2bc-8b9f1c6ab965" Result="[IfObject_Result]" ResultString="[IfObject_ResultString]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="None" TypeName="IfObject" Value_DisplayArg="True" Value_Type="x:String" Variable="[RunPowerShellScript_driveEncrypted]" Variable_DisplayArg="Run PowerShell Script.Did a Drive Encrypt?" Variable_Item="{x:Null}" Variable_Type="x:String" VerboseOutput="True" VerboseOutput_DisplayArg="" VerboseOutput_Item="{x:Null}" m_bTextLinkChange="False">
+                                  <p:IfObject.IfOption>
+                                    <p:SequenceActivity DisplayName="Then" sap:VirtualizedContainerService.HintSize="418,332" Name="SequenceActivity">
+                                      <p:SequenceActivity.Activities>
+                                        <p:Assignment Value_Item="{x:Null}" Value_ItemProp="{x:Null}" Variable_Item="{x:Null}" Variable_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.70.0.4, Culture=neutral, PublicKeyToken=null" DisplayName="Global Variable Assignment" sap:VirtualizedContainerService.HintSize="380,182" MinRequiredVersion="2.10.0.19" Moniker="3f34ebf6-cdf6-4a6c-999a-9c2aadd1d917" Result="[Assignment_Result]" ResultString="[Assignment_ResultString]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="None" TypeName="Assignment" Value="[RunPowerShellScript_driveEncrypted]" Value_DisplayArg="Run PowerShell Script.Did a Drive Encrypt?" Value_Type="x:String" Variable="[VolumeStartedEncrypting]" Variable_DisplayArg="Global Variables.VolumeStartedEncrypting" Variable_Type="x:String" m_bTextLinkChange="False" />
+                                      </p:SequenceActivity.Activities>
+                                      <p:SequenceActivity.Variables>
+                                        <Variable x:TypeArguments="x:Double" Name="Assignment_Result" />
+                                        <Variable x:TypeArguments="x:String" Name="Assignment_ResultString" />
+                                      </p:SequenceActivity.Variables>
+                                    </p:SequenceActivity>
+                                  </p:IfObject.IfOption>
+                                  <p:IfObject.Value>
+                                    <InArgument x:TypeArguments="x:Object">
+                                      <p:ObjectLiteral Value="True" />
+                                    </InArgument>
+                                  </p:IfObject.Value>
+                                </p:IfObject>
+                              </p:SequenceActivity.Activities>
+                              <p:SequenceActivity.Variables>
+                                <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_OutPut_64_1" />
+                                <Variable x:TypeArguments="x:Double" Name="RunPowerShellScript_Result_1" />
+                                <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_ResultString_1" />
+                                <Variable x:TypeArguments="scg:IEnumerable(x:Object)" Name="RunPowerShellScript_Results_x64_1" />
+                                <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_driveEncrypted" />
+                                <Variable x:TypeArguments="x:Double" Name="IfObject_Result" />
+                                <Variable x:TypeArguments="x:String" Name="IfObject_ResultString" />
+                              </p:SequenceActivity.Variables>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </p:SequenceActivity>
+                          </p:IfObject.IfOption>
+                          <p:IfObject.Value>
+                            <InArgument x:TypeArguments="x:Object">
+                              <p:ObjectLiteral Value="3" />
+                            </InArgument>
+                          </p:IfObject.Value>
+                        </p:IfObject>
+                      </p:ForEachSequence.Activities>
+                      <p:ForEachSequence.Variables>
+                        <Variable x:TypeArguments="x:String" Name="Log_LogMessage" />
+                        <Variable x:TypeArguments="x:String" Name="Log_ResultString" />
+                        <Variable x:TypeArguments="x:Double" Name="Log_Result" />
+                        <Variable x:TypeArguments="x:Double" Name="IfObject_Result_1" />
+                        <Variable x:TypeArguments="x:String" Name="IfObject_ResultString_1" />
+                        <Variable x:TypeArguments="x:String" Name="Log_LogMessage_1" />
+                        <Variable x:TypeArguments="x:Double" Name="Log_Result_1" />
+                        <Variable x:TypeArguments="x:String" Name="Log_ResultString_1" />
+                      </p:ForEachSequence.Variables>
+                    </p:ForEachSequence>
+                  </p:ForEachLoop.Each>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </p:ForEachLoop>
+              </p:SequenceActivity.Activities>
+              <p:SequenceActivity.Variables>
+                <Variable x:TypeArguments="scg:IEnumerable(x:Object)" Name="LogicalDisk_LogicalDiskInfo_1" />
+                <Variable x:TypeArguments="x:Double" Name="LogicalDisk_Result_1" />
+                <Variable x:TypeArguments="x:String" Name="LogicalDisk_ResultString_1" />
+                <Variable x:TypeArguments="x:Object" Name="ForEachLoop_ItemValue" />
+                <Variable x:TypeArguments="x:Double" Name="ForEachLoop_Result" />
+                <Variable x:TypeArguments="x:String" Name="ForEachLoop_ResultString" />
+              </p:SequenceActivity.Variables>
+            </p:SequenceActivity>
+          </p:IfObject.IfOption>
+          <p:IfObject.Value>
+            <InArgument x:TypeArguments="x:Object">
+              <p:ObjectLiteral Value="true" />
+            </InArgument>
+          </p:IfObject.Value>
+        </p:IfObject>
+        <p:IfObject CaseSensitive_ItemProp="{x:Null}" Condition_ItemProp="{x:Null}" Value_Item="{x:Null}" Value_ItemProp="{x:Null}" Variable_Item="{x:Null}" Variable_ItemProp="{x:Null}" VerboseOutput_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.70.0.4, Culture=neutral, PublicKeyToken=null" CaseSensitive="False" CaseSensitive_DisplayArg="false" CaseSensitive_Item="{x:Null}" Condition="equals" Condition_DisplayArg="equals" Condition_Item="{x:Null}" DisplayName="If" sap:VirtualizedContainerService.HintSize="678,511" MinRequiredVersion="2.19.0.1" Moniker="1dcde04b-38ab-48e8-ba15-7fd11096e4c8" Result="[IfObject_Result_3]" ResultString="[IfObject_ResultString_3]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="None" TypeName="IfObject" Value_DisplayArg="True" Value_Type="x:String" Variable="[VolumeStartedEncrypting]" Variable_DisplayArg="Global Variables.VolumeStartedEncrypting" Variable_Type="x:String" VerboseOutput="False" VerboseOutput_DisplayArg="" VerboseOutput_Item="{x:Null}" m_bTextLinkChange="False">
+          <p:IfObject.IfOption>
+            <p:SequenceActivity DisplayName="Then" sap:VirtualizedContainerService.HintSize="394,238" Name="SequenceActivity">
+              <p:SequenceActivity.Activities>
+                <p:Wait WaitTime_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.70.0.4, Culture=neutral, PublicKeyToken=null" DisplayName="Wait" sap:VirtualizedContainerService.HintSize="356,88" MinRequiredVersion="2.10.0.19" Moniker="199b76f8-e77d-4db2-9bbb-7095657439de" Result="[Wait_Result]" ResultString="[Wait_ResultString]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" TypeName="Wait" WaitTime="120" WaitTime_DisplayArg="120" WaitTime_Item="{x:Null}" m_bTextLinkChange="False" />
+              </p:SequenceActivity.Activities>
+              <p:SequenceActivity.Variables>
+                <Variable x:TypeArguments="x:String" Name="Wait_ResultString" />
+                <Variable x:TypeArguments="x:Double" Name="Wait_Result" />
+              </p:SequenceActivity.Variables>
+            </p:SequenceActivity>
+          </p:IfObject.IfOption>
+          <p:IfObject.Value>
+            <InArgument x:TypeArguments="x:Object">
+              <p:ObjectLiteral Value="True" />
+            </InArgument>
+          </p:IfObject.Value>
+        </p:IfObject>
+        <p:RunPowerShellScript AssemblyName="PolicyExecutionEngine, Version=2.4.0.43, Culture=neutral, PublicKeyToken=null" DisplayName="Run PowerShell Script" sap:VirtualizedContainerService.HintSize="664,522" MinRequiredVersion="2.10.0.19" Moniker="dd5b19ab-cb4b-401e-ae5c-1231727285ab" OutPut_64="[RunPowerShellScript_OutPut_64]" Result="[RunPowerShellScript_Result]" ResultString="[RunPowerShellScript_ResultString]" Results_x64="[RunPowerShellScript_Results_x64]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" TypeName="RunPowerShellScript" genArgEvent="2e93fed9-3755-4d02-818c-5fd4db0fe1f2" m_bTextLinkChange="False" script="DQAKAA0ACgANAAoAJABCAGkAdABsAG8AYwBrAGUAcgBWAG8AbAB1AG0AZQByAHMAIAA9ACAARwBlAHQALQBCAGkAdABMAG8AYwBrAGUAcgBWAG8AbAB1AG0AZQANAAoADQAKACQAaQBuAHQAawBlAHkAZgBvAHUAbgBkACAAPQAwAA0ACgANAAoAJABLAGUAeQBhAD0AIgBOAG8AIABSAGUAYwBvAHYAZQByAHkAIABLAGUAeQBzACAARgBvAHUAbgBkACIADQAKACQARAByAHYAYQA9ACIATgBvACAARAByAGkAdgBlAHMAIABoAGEAdgBlACAAQQB2AGEAaQBsAGEAYgBsAGUAIABSAGUAYwBvAHYAZQByAHkAIABLAGUAeQBzACIADQAKACQAUAByAG8AdABhAD0AIgBOAG8AIABQAHIAbwB0AGUAYwB0AG8AcgAgAEEAdgBhAGkAbABhAGIAbABlACIADQAKACQASwBlAHkAYgA9ACIAIgANAAoAJABEAHIAdgBiAD0AIgAiAA0ACgAkAFAAcgBvAHQAYgA9ACIAIgANAAoAJABLAGUAeQBjAD0AIgAiAA0ACgAkAEQAcgB2AGMAPQAiACIADQAKACQAUAByAG8AdABjAD0AIgAiAA0ACgAkAEsAZQB5AGQAPQAiACIADQAKACQARAByAHYAZAA9ACIAIgANAAoAJABQAHIAbwB0AGQAPQAiACIADQAKACQASwBlAHkAZQA9ACIAIgANAAoAJABEAHIAdgBlAD0AIgAiAA0ACgAkAFAAcgBvAHQAZQA9ACIAIgANAAoAJABLAGUAeQBmAD0AIgAiAA0ACgAkAEQAcgB2AGYAPQAiACIADQAKACQAUAByAG8AdABmAD0AIgAiAA0ACgAkAEsAZQB5AGcAPQAiACIADQAKACQARAByAHYAZwA9ACIAIgANAAoAJABQAHIAbwB0AGcAPQAiACIADQAKACMAIABGAG8AcgAgAGUAYQBjAGgAIAB2AG8AbAB1AG0AZQAsACAAZwBlAHQAIAB0AGgAZQAgAFIAZQBjAG8AdgBlAHIAeQBQAGEAcwBzAG8AdwByAGQAIABhAG4AZAAgAGQAaQBzAHAAbABhAHkAIABpAHQALgANAAoAJABCAGkAdABsAG8AYwBrAGUAcgBWAG8AbAB1AG0AZQByAHMAIAB8ACAARgBvAHIARQBhAGMAaAAtAE8AYgBqAGUAYwB0ACAAewANAAoAIAAgACAAIAAgACAAIAAgACQATQBvAHUAbgB0AFAAbwBpAG4AdAAgAD0AIAAkAF8ALgBNAG8AdQBuAHQAUABvAGkAbgB0ACAADQAKACAAIAAgACAAIAAgACAAIAAkAEsAZQB5AFAAcgBvAHQAZQBjAHQAbwByAHMAIAA9ACAAJABfAC4ASwBlAHkAUAByAG8AdABlAGMAdABvAHIADQAKACAAIAAgACAAIAAgACAAIAAkAEsAZQB5AFAAcgBvAHQAZQBjAHQAbwByAHMAIAB8ACAARgBvAHIARQBhAGMAaAAtAE8AYgBqAGUAYwB0ACAAewANAAoACQAJAAkADQAKAAkACQAJAEkAZgAgACgAJABfAC4ASwBlAHkAUAByAG8AdABlAGMAdABvAHIAVAB5AHAAZQAgAC0AZQBxACAAIgBSAGUAYwBvAHYAZQByAHkAUABhAHMAcwB3AG8AcgBkACIAKQAgAHsADQAKAAkACQAgACAAIAAJAAkADQAKAAkACQAJAAkAJABSAGUAYwBvAHYAZQByAHkASwBlAHkAIAA9ACAAJABfAC4AUgBlAGMAbwB2AGUAcgB5AFAAYQBzAHMAdwBvAHIAZAAgAA0ACgAJAAkACQANAAoACQAJAAkACQBpAGYAIAAoACQAUgBlAGMAbwB2AGUAcgB5AEsAZQB5AC4ATABlAG4AZwB0AGgAIAAtAGcAdAAgADUAKQAgAHsADQAKAAkACQAJAAkACQAJAAkADQAKAAkACQAJAAkACQBXAHIAaQB0AGUALQBPAHUAdABwAHUAdAAgACgAIgBUAGgAZQAgAGQAcgBpAHYAZQAgACQATQBvAHUAbgB0AFAAbwBpAG4AdAAgAGgAYQBzACAAYQAgAHIAZQBjAG8AdgBlAHIAeQAgAGsAZQB5ACAAJABSAGUAYwBvAHYAZQByAHkASwBlAHkALgAiACkADQAKAA0ACgAJAAkACQAJAAkAJABLAGUAeQBQAHIAbwB0AGUAYwB0AG8AcgAgAD0AIAAkAF8ALgBLAGUAeQBQAHIAbwB0AGUAYwB0AG8AcgBJAEQADQAKAA0ACgANAAoACQAJAAkACQAJAGkAZgAoACQAaQBuAHQAawBlAHkAZgBvAHUAbgBkACAALQBlAHEAIAAwACkADQAKAAkACQAJAAkACQB7AA0ACgAJAAkACQAJAAkACQAkAEsAZQB5AGEAPQAkAFIAZQBjAG8AdgBlAHIAeQBLAGUAeQANAAoACQAJAAkACQAJAAkAJABEAHIAdgBhAD0AJABNAG8AdQBuAHQAUABvAGkAbgB0AA0ACgAJAAkACQAJAAkACQAkAFAAcgBvAHQAYQA9ACQASwBlAHkAUAByAG8AdABlAGMAdABvAHIADQAKAAkACQAJAAkACQB9AA0ACgAJAAkACQAJAAkAZQBsAHMAZQBpAGYAKAAkAGkAbgB0AGsAZQB5AGYAbwB1AG4AZAAgACAALQBlAHEAIAAxACkADQAKAAkACQAJAAkACQB7AA0ACgAJAAkACQAJAAkACQAkAEsAZQB5AGIAPQAkAFIAZQBjAG8AdgBlAHIAeQBLAGUAeQANAAoACQAJAAkACQAJAAkAJABEAHIAdgBiAD0AJABNAG8AdQBuAHQAUABvAGkAbgB0AA0ACgAJAAkACQAJAAkACQAkAFAAcgBvAHQAYgA9ACQASwBlAHkAUAByAG8AdABlAGMAdABvAHIADQAKAAkACQAJAAkACQB9AA0ACgAJAAkACQAJAAkAZQBsAHMAZQBpAGYAKAAkAGkAbgB0AGsAZQB5AGYAbwB1AG4AZAAgACAALQBlAHEAIAAyACkADQAKAAkACQAJAAkACQB7AA0ACgAJAAkACQAJAAkACQAkAEsAZQB5AGMAPQAkAFIAZQBjAG8AdgBlAHIAeQBLAGUAeQANAAoACQAJAAkACQAJAAkAJABEAHIAdgBjAD0AJABNAG8AdQBuAHQAUABvAGkAbgB0AA0ACgAJAAkACQAJAAkACQAkAFAAcgBvAHQAYwA9ACQASwBlAHkAUAByAG8AdABlAGMAdABvAHIADQAKAAkACQAJAAkACQB9AA0ACgAJAAkACQAJAAkAZQBsAHMAZQBpAGYAKAAkAGkAbgB0AGsAZQB5AGYAbwB1AG4AZAAgACAALQBlAHEAIAAzACkADQAKAAkACQAJAAkACQB7AA0ACgAJAAkACQAJAAkACQAkAEsAZQB5AGQAPQAkAFIAZQBjAG8AdgBlAHIAeQBLAGUAeQANAAoACQAJAAkACQAJAAkAJABEAHIAdgBkAD0AJABNAG8AdQBuAHQAUABvAGkAbgB0AA0ACgAJAAkACQAJAAkACQAkAFAAcgBvAHQAZAA9ACQASwBlAHkAUAByAG8AdABlAGMAdABvAHIADQAKAAkACQAJAAkACQB9AA0ACgAJAAkACQAJAAkAZQBsAHMAZQBpAGYAKAAkAGkAbgB0AGsAZQB5AGYAbwB1AG4AZAAgACAALQBlAHEAIAA0ACkADQAKAAkACQAJAAkACQB7AA0ACgAJAAkACQAJAAkACQAkAEsAZQB5AGUAPQAkAFIAZQBjAG8AdgBlAHIAeQBLAGUAeQANAAoACQAJAAkACQAJAAkAJABEAHIAdgBlAD0AJABNAG8AdQBuAHQAUABvAGkAbgB0AA0ACgAJAAkACQAJAAkACQAkAFAAcgBvAHQAZQA9ACQASwBlAHkAUAByAG8AdABlAGMAdABvAHIADQAKAAkACQAJAAkACQB9AA0ACgAJAAkACQAJAAkAZQBsAHMAZQBpAGYAKAAkAGkAbgB0AGsAZQB5AGYAbwB1AG4AZAAgACAALQBlAHEAIAA1ACkADQAKAAkACQAJAAkACQB7AA0ACgAJAAkACQAJAAkACQAkAEsAZQB5AGYAPQAkAFIAZQBjAG8AdgBlAHIAeQBLAGUAeQANAAoACQAJAAkACQAJAAkAJABEAHIAdgBmAD0AJABNAG8AdQBuAHQAUABvAGkAbgB0AA0ACgAJAAkACQAJAAkACQAkAFAAcgBvAHQAZgA9ACQASwBlAHkAUAByAG8AdABlAGMAdABvAHIADQAKAAkACQAJAAkACQB9AA0ACgAJAAkACQAJAAkAZQBsAHMAZQBpAGYAKAAkAGkAbgB0AGsAZQB5AGYAbwB1AG4AZAAgACAALQBlAHEAIAA2ACkADQAKAAkACQAJAAkACQB7AA0ACgAJAAkACQAJAAkACQAkAEsAZQB5AGcAPQAkAFIAZQBjAG8AdgBlAHIAeQBLAGUAeQANAAoACQAJAAkACQAJAAkAJABEAHIAdgBnAD0AJABNAG8AdQBuAHQAUABvAGkAbgB0AA0ACgAJAAkACQAJAAkACQAkAFAAcgBvAHQAZwA9ACQASwBlAHkAUAByAG8AdABlAGMAdABvAHIADQAKAAkACQAJAAkACQB9AA0ACgAJAAkACQAJAAkAJABpAG4AdABrAGUAeQBmAG8AdQBuAGQAIAA9ACAAJABpAG4AdABrAGUAeQBmAG8AdQBuAGQAIAArACAAMQANAAoACQAJAAkACQB9AA0ACgAJAAkACQB9AA0ACgAJAAkAfQAgACAAIAAgACAAIAAgACAADQAKACAAIAAgACAAfQANAAoADQAKACAAJABzAGMAbwB1AHQAZABhACAAPQAgACQARAByAHYAYQANAAoAIAAkAHMAYwBvAHUAdABrAGEAIAA9ACAAJABLAGUAeQBhAA0ACgAgACQAcwBjAG8AdQB0AHAAYQAgAD0AIAAkAFAAcgBvAHQAYQANAAoADQAKACAAJABzAGMAbwB1AHQAawBiACAAPQAgACQASwBlAHkAYgANAAoAIAAkAHMAYwBvAHUAdABkAGIAIAA9ACAAJABEAHIAdgBiAA0ACgAgACQAcwBjAG8AdQB0AHAAYgAgAD0AIAAkAFAAcgBvAHQAYgANAAoADQAKACAAJABzAGMAbwB1AHQAZABjACAAPQAgACQARAByAHYAYwANAAoAIAAkAHMAYwBvAHUAdABrAGMAIAA9ACAAJABLAGUAeQBjAA0ACgAgACQAcwBjAG8AdQB0AHAAYwAgAD0AIAAkAFAAcgBvAHQAYwANAAoADQAKACAAJABzAGMAbwB1AHQAZABkACAAPQAgACQARAByAHYAZAANAAoAIAAkAHMAYwBvAHUAdABrAGQAIAA9ACAAJABLAGUAeQBkAA0ACgAgACQAcwBjAG8AdQB0AHAAZAAgAD0AIAAkAFAAcgBvAHQAZAANAAoADQAKACAAJABzAGMAbwB1AHQAZABlACAAPQAgACQARAByAHYAZQANAAoAIAAkAHMAYwBvAHUAdABrAGUAIAA9ACAAJABLAGUAeQBlAA0ACgAgACQAcwBjAG8AdQB0AHAAZQAgAD0AIAAkAFAAcgBvAHQAZQANAAoADQAKACAAJABzAGMAbwB1AHQAZABmACAAPQAgACQARAByAHYAZgANAAoAIAAkAHMAYwBvAHUAdABrAGYAIAA9ACAAJABLAGUAeQBmAA0ACgAgACQAcwBjAG8AdQB0AHAAZgAgAD0AIAAkAFAAcgBvAHQAZgANAAoADQAKACAAJABzAGMAbwB1AHQAZABnACAAPQAgACQARAByAHYAZwANAAoAIAAkAHMAYwBvAHUAdABrAGcAIAA9ACAAJABLAGUAeQBnAA0ACgAgACQAcwBjAG8AdQB0AHAAZwAgAD0AIAAkAFAAcgBvAHQAZwANAAoA">
+          <p:RunPowerShellScript.InArgs>
+            <scg:Dictionary x:TypeArguments="x:String, p:InArg" />
+          </p:RunPowerShellScript.InArgs>
+          <p:RunPowerShellScript.OutArgs>
+            <p:OutArg x:Key="scoutda" ArgType="string" DisplayName="scoutda" Name="scoutda">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:String">[RunPowerShellScript_scoutda]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+            <p:OutArg x:Key="scoutka" ArgType="string" DisplayName="scoutka" Name="scoutka">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:String">[RunPowerShellScript_scoutka]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+            <p:OutArg x:Key="scoutkb" ArgType="string" DisplayName="scoutkb" Name="scoutkb">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:String">[RunPowerShellScript_scoutkb]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+            <p:OutArg x:Key="scoutdb" ArgType="string" DisplayName="scoutdb" Name="scoutdb">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:String">[RunPowerShellScript_scoutdb]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+            <p:OutArg x:Key="scoutdc" ArgType="string" DisplayName="scoutdc" Name="scoutdc">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:String">[RunPowerShellScript_scoutdc]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+            <p:OutArg x:Key="scoutkc" ArgType="string" DisplayName="scoutkc" Name="scoutkc">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:String">[RunPowerShellScript_scoutkc]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+            <p:OutArg x:Key="scoutdd" ArgType="string" DisplayName="scoutdd" Name="scoutdd">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:String">[RunPowerShellScript_scoutdd]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+            <p:OutArg x:Key="scoutkd" ArgType="string" DisplayName="scoutkd" Name="scoutkd">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:String">[RunPowerShellScript_scoutkd]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+            <p:OutArg x:Key="scoutde" ArgType="string" DisplayName="scoutde" Name="scoutde">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:String">[RunPowerShellScript_scoutde]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+            <p:OutArg x:Key="scoutke" ArgType="string" DisplayName="scoutke" Name="scoutke">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:String">[RunPowerShellScript_scoutke]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+            <p:OutArg x:Key="scoutdf" ArgType="string" DisplayName="scoutdf" Name="scoutdf">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:String">[RunPowerShellScript_scoutdf]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+            <p:OutArg x:Key="scoutdg" ArgType="string" DisplayName="scoutdg" Name="scoutdg">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:String">[RunPowerShellScript_scoutdg]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+            <p:OutArg x:Key="scoutkg" ArgType="string" DisplayName="scoutkg" Name="scoutkg">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:String">[RunPowerShellScript_scoutkg]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+            <p:OutArg x:Key="scoutkf" ArgType="string" DisplayName="scoutkf" Name="scoutkf">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:String">[RunPowerShellScript_scoutkf]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+            <p:OutArg x:Key="scoutpa" ArgType="string" DisplayName="scoutpa" Name="scoutpa">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:String">[RunPowerShellScript_scoutpa]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+            <p:OutArg x:Key="scoutpb" ArgType="string" DisplayName="scoutpb" Name="scoutpb">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:String">[RunPowerShellScript_scoutpb]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+            <p:OutArg x:Key="scoutpc" ArgType="string" DisplayName="scoutpc" Name="scoutpc">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:String">[RunPowerShellScript_scoutpc]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+            <p:OutArg x:Key="scoutpd" ArgType="string" DisplayName="scoutpd" Name="scoutpd">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:String">[RunPowerShellScript_scoutpd]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+            <p:OutArg x:Key="scoutpe" ArgType="string" DisplayName="scoutpe" Name="scoutpe">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:String">[RunPowerShellScript_scoutpe]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+            <p:OutArg x:Key="scoutpf" ArgType="string" DisplayName="scoutpf" Name="scoutpf">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:String">[RunPowerShellScript_scoutpf]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+            <p:OutArg x:Key="scoutpg" ArgType="string" DisplayName="scoutpg" Name="scoutpg">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:String">[RunPowerShellScript_scoutpg]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+          </p:RunPowerShellScript.OutArgs>
+        </p:RunPowerShellScript>
+      </p:PolicySequence.Activities>
+      <p:PolicySequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_OutPut_64" />
+        <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_ResultString" />
+        <Variable x:TypeArguments="scg:IEnumerable(x:Object)" Name="RunPowerShellScript_Results_x64" />
+        <Variable x:TypeArguments="x:Double" Name="RunPowerShellScript_Result" />
+        <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_scoutka" />
+        <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_scoutda" />
+        <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_scoutkb" />
+        <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_scoutdb" />
+        <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_scoutdc" />
+        <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_scoutkc" />
+        <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_scoutdd" />
+        <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_scoutkd" />
+        <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_scoutde" />
+        <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_scoutke" />
+        <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_scoutdf" />
+        <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_scoutdg" />
+        <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_scoutkg" />
+        <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_scoutkf" />
+        <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_OutPut_64_2" />
+        <Variable x:TypeArguments="x:Double" Name="RunPowerShellScript_Result_2" />
+        <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_ResultString_2" />
+        <Variable x:TypeArguments="scg:IEnumerable(x:Object)" Name="RunPowerShellScript_Results_x64_2" />
+        <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_TPMPresent" />
+        <Variable x:TypeArguments="x:Double" Name="IfObject_Result_2" />
+        <Variable x:TypeArguments="x:String" Name="IfObject_ResultString_2" />
+        <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_scoutpa" />
+        <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_scoutpb" />
+        <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_scoutpc" />
+        <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_scoutpd" />
+        <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_scoutpe" />
+        <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_scoutpf" />
+        <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_scoutpg" />
+        <Variable x:TypeArguments="x:Double" Name="IfObject_Result_3" />
+        <Variable x:TypeArguments="x:String" Name="IfObject_ResultString_3" />
+        <Variable x:TypeArguments="x:String" Default="False" Name="VolumeStartedEncrypting" />
+      </p:PolicySequence.Variables>
+    </p:PolicySequence>
+  </Activity>
+</Policy>

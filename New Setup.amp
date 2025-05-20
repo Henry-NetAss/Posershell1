@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><Policy ID="d564c8e7-204a-45ea-ae00-4ca544566a71" Name="New PC Setup Office ProPlus" Description="SW5zdGFsbHMNCiNTY3JpcHQgaXMgdXRpbGl6ZWQgZm9yIGluc3RhbGxpbmcgdGhlIGZvbGxvd2luZyBhcHBsaWNhdGlvbnMNCg0KI0Fkb2JlIERDIA0KI0Nocm9tZSANCiNKYXZhIA0KI09mZmljZSAzNjUgUHJvUGx1cyAgIA0KI1VwZGF0ZSBuYW1lIG9uIFBDIA0KI0FkZHMgT2ZmaWNlIHNob3J0Y3V0cyB0byBwdWJsaWMgZGVza3RvcCANCiNFbmFibGVkIFJEUCANCiNSZW5hbWVzIFBD" Version="2.10.0.19" RemoteCategory="0" ExecutionType="Local" MinimumPSVersionRequired="0.0.0">
+  <Object ID="{24c036b6-efa2-4c42-bc3b-51595550b31b}" Type="{B6FA6D8B-EEAA-47A6-8463-7F9A4F5BBB6E}" Data="&lt;xml&gt;&lt;Parameters&gt;&lt;Parameter ParameterName=&quot;RepoPassword&quot; Label=&quot;RepoPassword&quot; ParameterType=&quot;password&quot; Value=&quot;&quot; /&gt;&lt;Parameter ParameterName=&quot;NewName&quot; Label=&quot;PC's New Name&quot; ParameterType=&quot;string&quot; Value=&quot;&quot; /&gt;&lt;/Parameters&gt;&lt;/xml&gt;" />
+  <LinkManager xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/PolicyExecutor">
+    <hashset xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" />
+  </LinkManager>
+  <Diagnostics OriginalVersion="2.60.0.3" />
+  <Activity mc:Ignorable="sads sap" x:Class="Policy Builder" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="clr-namespace:PolicyExecutor;assembly=PolicyExecutionEngine" xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <x:Members>
+      <x:Property Name="PolicyGUID" Type="InArgument(x:String)" />
+    </x:Members>
+    <sap:VirtualizedContainerService.HintSize>504,745</sap:VirtualizedContainerService.HintSize>
+    <mva:VisualBasic.Settings>Assembly references and imported namespaces serialized as XML namespaces</mva:VisualBasic.Settings>
+    <p:PolicySequence DisplayName="Policy Builder" sap:VirtualizedContainerService.HintSize="504,745" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces">
+      <p:PolicySequence.Activities>
+        <p:RunPowerShellScript AssemblyName="PolicyExecutionEngine, Version=2.9.0.3, Culture=neutral, PublicKeyToken=null" DisplayName="Run PowerShell Script" sap:VirtualizedContainerService.HintSize="468,522" Moniker="8a341a59-8da3-42a2-8cc9-1216001554ab" OutPut_64="[RunPowerShellScript_OutPut_64]" Result="[RunPowerShellScript_Result]" ResultString="[RunPowerShellScript_ResultString]" Results_x64="[RunPowerShellScript_Results_x64]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" TypeName="RunPowerShellScript" genArgEvent="fefe4537-fd46-413e-8ac6-8b46cae09fdb" m_bTextLinkChange="False" script="IwBOAGUAdwAgAFAAQwAgAEQAZQBwAGwAbwB5AG0AZQBuAHQAIABTAGMAcgBpAHAAdAANAAoACgAjAEMAaABhAG4AZwBlAHMAIABQAG8AdwBlAHIAIABTAGUAdAB0AGkAbgBnAHMACgBQAG8AdwBlAHIAYwBmAGcAIAAvAEMAaABhAG4AZwBlACAAbQBvAG4AaQB0AG8AcgAtAHQAaQBtAGUAbwB1AHQALQBhAGMAIAAwAA0ACgBQAG8AdwBlAHIAYwBmAGcAIAAvAEMAaABhAG4AZwBlACAAbQBvAG4AaQB0AG8AcgAtAHQAaQBtAGUAbwB1AHQALQBkAGMAIAAwAA0ACgBQAG8AdwBlAHIAYwBmAGcAIAAvAEMAaABhAG4AZwBlACAAcwB0AGEAbgBkAGIAeQAtAHQAaQBtAGUAbwB1AHQALQBhAGMAIAAwAA0ACgBQAG8AdwBlAHIAYwBmAGcAIAAvAEMAaABhAG4AZwBlACAAcwB0AGEAbgBkAGIAeQAtAHQAaQBtAGUAbwB1AHQALQBkAGMAIAAwAAoACgAjAFAAcgBvAG0AcAB0AHMAIABmAG8AcgAgAFAAQwAgAHIAZQBuAGEAbQBlAAoAUgBlAG4AYQBtAGUALQBDAG8AbQBwAHUAdABlAHIAIAAtAE4AZQB3AE4AYQBtAGUAIAAiACQATgBlAHcATgBhAG0AZQAiAAoACgAjAEMARAAgAHQAbwAgAEMAZAByAGkAdgBlAAoAQwBEACAAQwA6AFwACgAKACMAQwByAGUAYQB0AGUAcwAgAHQAZQBtAHAAIABkAGkAcgBlAGMAdABvAHIAeQAgAG8AbgAgAEMAIABEAHIAaQB2AGUACgBtAGsAZABpAHIAIAAiAEMAOgBcAE4AQQAiAA0ACgBtAGsAZABpAHIAIAAiAEMAOgBcAE4AQQBcAEkAbgBzAHQAYQBsAGwAYQB0AGkAbwBuACIADQAKACMARABvAHcAbgBsAG8AYQBkACAASQBuAHMAdABhAGwAbABhAHQAaQBvAG4AIABGAGkAbABlAHMACgAkAFUAcgBsACAAPQAgACIAaAB0AHQAcABzADoALwAvAGcAaQB0AGgAdQBiAC4AYwBvAG0ALwBIAGUAbgByAHkALQBOAGUAdABBAHMAcwAvAE4AQQAvAGEAcgBjAGgAaQB2AGUALwByAGUAZgBzAC8AaABlAGEAZABzAC8AbQBhAGkAbgAuAHoAaQBwACIACgAKAA==">
+          <p:RunPowerShellScript.InArgs>
+            <p:InArg Item="{x:Null}" ItemProp="{x:Null}" x:Key="NewName" ArgType="string" DisplayArg="Input Parameters.PC's New Name" DisplayName="PCs New Name" Name="NewName" isRequired="False">
+              <p:InArg.Arg>
+                <InArgument x:TypeArguments="x:String">[NewName]</InArgument>
+              </p:InArg.Arg>
+            </p:InArg>
+          </p:RunPowerShellScript.InArgs>
+          <p:RunPowerShellScript.OutArgs>
+            <scg:Dictionary x:TypeArguments="x:String, p:OutArg" />
+          </p:RunPowerShellScript.OutArgs>
+        </p:RunPowerShellScript>
+      </p:PolicySequence.Activities>
+      <p:PolicySequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_OutPut_64" />
+        <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_ResultString" />
+        <Variable x:TypeArguments="scg:IEnumerable(x:Object)" Name="RunPowerShellScript_Results_x64" />
+        <Variable x:TypeArguments="x:Double" Name="RunPowerShellScript_Result" />
+        <Variable x:TypeArguments="p:Password" Name="RepoPassword" />
+        <Variable x:TypeArguments="x:String" Name="NewName" />
+      </p:PolicySequence.Variables>
+    </p:PolicySequence>
+  </Activity>
+</Policy>

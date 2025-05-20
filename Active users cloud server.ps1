@@ -1,0 +1,1 @@
+Get-ADUser -filter * -Properties "LastLogonDate" | select Name, SamAccountName, LastLogonDate, Enabled|out-file -filepath C:\NA\Users.txt

@@ -1,0 +1,1 @@
+﻿Get-AppxPackage -AllUsers *Spotify* | Remove-AppxPackage                                # Uninstall Spotify

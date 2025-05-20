@@ -1,0 +1,1 @@
+set-location c:\|Clear-RecycleBin -Force

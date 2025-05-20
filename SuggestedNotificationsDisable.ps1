@@ -1,0 +1,1 @@
+        New-ItemProperty -Path 'HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Notifications\Settings\Windows.SystemToast.Suggested' -Name 'Enabled' -Value '0' -PropertyType DWORD -Force

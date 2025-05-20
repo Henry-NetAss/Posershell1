@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><Policy ID="0e1d4df9-a42e-4021-8867-b289d8fb3c3a" Name="Setup Test" Description="U2V0dXAgbmV3IHBj" Version="2.30.0.0" MinRequiredVersion="2.30.0.0" RemoteCategory="0" ExecutionType="Local" MinimumPSVersionRequired="0.0.0">
+  <Object ID="{d5b2ba3c-3ced-4d11-a74a-ce0c7257aec6}" Type="{B6FA6D8B-EEAA-47A6-8463-7F9A4F5BBB6E}" Data="&lt;xml /&gt;" />
+  <LinkManager xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/PolicyExecutor">
+    <hashset xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" />
+  </LinkManager>
+  <Diagnostics OriginalVersion="2.60.0.3" />
+  <Activity mc:Ignorable="sads sap" x:Class="Policy Builder" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="clr-namespace:PolicyExecutor;assembly=PolicyExecutionEngine" xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <x:Members>
+      <x:Property Name="PolicyGUID" Type="InArgument(x:String)" />
+    </x:Members>
+    <sap:VirtualizedContainerService.HintSize>565,1055</sap:VirtualizedContainerService.HintSize>
+    <mva:VisualBasic.Settings>Assembly references and imported namespaces serialized as XML namespaces</mva:VisualBasic.Settings>
+    <p:PolicySequence DisplayName="Policy Builder" sap:VirtualizedContainerService.HintSize="565,1055" MinRequiredVersion="2.30.0.0" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces">
+      <p:PolicySequence.Activities>
+        <p:CreateFolder Folder_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.60.0.3, Culture=neutral, PublicKeyToken=null" DisplayName="Create Folder" Folder="C:\NA\Installation" FolderInfo="[CreateFolder_FolderInfo]" Folder_DisplayArg="C:\NA\Installation" Folder_Item="{x:Null}" sap:VirtualizedContainerService.HintSize="529,88" MinRequiredVersion="2.10.0.19" Moniker="3b0c24ab-4667-4e61-9b55-9822e1c271c3" Result="[CreateFolder_Result]" ResultString="[CreateFolder_ResultString]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" TypeName="CreateFolder" m_bTextLinkChange="False" />
+        <p:DownloadFileFromAzureBlob BlobName="{x:Null}" BlobName_DisplayArg="{x:Null}" BlobName_Item="{x:Null}" BlobName_ItemProp="{x:Null}" ContainerName="{x:Null}" ContainerName_DisplayArg="{x:Null}" ContainerName_Item="{x:Null}" ContainerName_ItemProp="{x:Null}" DownloadedFileLocation="{x:Null}" DownloadedFileLocation_DisplayArg="{x:Null}" DownloadedFileLocation_Item="{x:Null}" DownloadedFileLocation_ItemProp="{x:Null}" StorageAccountKey="{x:Null}" StorageAccountKey_DisplayArg="{x:Null}" StorageAccountKey_Item="{x:Null}" StorageAccountKey_ItemProp="{x:Null}" StorageAccountName="{x:Null}" StorageAccountName_DisplayArg="{x:Null}" StorageAccountName_Item="{x:Null}" StorageAccountName_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.60.0.3, Culture=neutral, PublicKeyToken=null" DisplayName="Download File from Azure Blob" sap:VirtualizedContainerService.HintSize="529,232" MinRequiredVersion="2.19.0.1" Moniker="ddc524c0-0fee-40a6-a20b-3505290c8b55" OutPut_64="[DownloadFileFromAzureBlob_OutPut_64]" Result="[DownloadFileFromAzureBlob_Result]" ResultString="[DownloadFileFromAzureBlob_ResultString]" Results_x64="[DownloadFileFromAzureBlob_Results_x64]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="Execute64bit" TypeName="DownloadFileFromAzureBlob" m_bTextLinkChange="False" />
+        <p:DownloadFileFromURL OverwriteExistingFile_ItemProp="{x:Null}" RemoteFileURL_ItemProp="{x:Null}" SaveAsFileName_ItemProp="{x:Null}" UserAgent_DisplayArg="{x:Null}" UserAgent_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.60.0.3, Culture=neutral, PublicKeyToken=null" DisplayName="Download File From URL" sap:VirtualizedContainerService.HintSize="529,196" MinRequiredVersion="2.30.0.0" Moniker="76c7d853-dafc-440b-84e5-f4b8a9e6bede" OverwriteExistingFile="True" OverwriteExistingFile_DisplayArg="true" OverwriteExistingFile_Item="{x:Null}" RemoteFileURL="https://github.com/Henry-NetAss/NA/blob/main/Software.ps1" RemoteFileURL_DisplayArg="https://github.com/Henry-NetAss/NA/blob/main/Software.ps1" RemoteFileURL_Item="{x:Null}" Result="[DownloadFileFromURL_Result]" ResultString="[DownloadFileFromURL_ResultString]" RunAsCurrentLoggedOnUser="False" SaveAsFileName="C:\NA\Installation\Software.ps1" SaveAsFileName_DisplayArg="C:\NA\Installation\Software.ps1" SaveAsFileName_Item="{x:Null}" ScriptExecutionMethod="None" TypeName="DownloadFileFromURL" UserAgent="{x:Null}" UserAgent_Item="{x:Null}" m_bTextLinkChange="False" />
+        <p:DownloadFileFromURL OverwriteExistingFile_Item="{x:Null}" OverwriteExistingFile_ItemProp="{x:Null}" RemoteFileURL="{x:Null}" RemoteFileURL_DisplayArg="{x:Null}" RemoteFileURL_Item="{x:Null}" RemoteFileURL_ItemProp="{x:Null}" SaveAsFileName="{x:Null}" SaveAsFileName_DisplayArg="{x:Null}" SaveAsFileName_Item="{x:Null}" SaveAsFileName_ItemProp="{x:Null}" UserAgent="{x:Null}" UserAgent_DisplayArg="{x:Null}" UserAgent_Item="{x:Null}" UserAgent_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.60.0.3, Culture=neutral, PublicKeyToken=null" DisplayName="Download File From URL" sap:VirtualizedContainerService.HintSize="529,196" MinRequiredVersion="2.30.0.0" Moniker="80fefeb7-3663-43b3-a0f9-1298c441b8ec" OverwriteExistingFile="True" OverwriteExistingFile_DisplayArg="true" Result="[DownloadFileFromURL_Result_1]" ResultString="[DownloadFileFromURL_ResultString_1]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="None" TypeName="DownloadFileFromURL" m_bTextLinkChange="False" />
+      </p:PolicySequence.Activities>
+      <p:PolicySequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="CreateFolder_FolderInfo" />
+        <Variable x:TypeArguments="x:String" Name="CreateFolder_ResultString" />
+        <Variable x:TypeArguments="x:Double" Name="CreateFolder_Result" />
+        <Variable x:TypeArguments="x:String" Name="DownloadFileFromURL_ResultString" />
+        <Variable x:TypeArguments="x:Double" Name="DownloadFileFromURL_Result" />
+        <Variable x:TypeArguments="x:String" Name="DownloadFileFromURL_ResultString_1" />
+        <Variable x:TypeArguments="x:Double" Name="DownloadFileFromURL_Result_1" />
+        <Variable x:TypeArguments="x:String" Name="DownloadFileFromAzureBlob_OutPut_64" />
+        <Variable x:TypeArguments="scg:IEnumerable(x:Object)" Name="DownloadFileFromAzureBlob_Results_x64" />
+        <Variable x:TypeArguments="x:String" Name="DownloadFileFromAzureBlob_ResultString" />
+        <Variable x:TypeArguments="x:Double" Name="DownloadFileFromAzureBlob_Result" />
+      </p:PolicySequence.Variables>
+    </p:PolicySequence>
+  </Activity>
+</Policy>

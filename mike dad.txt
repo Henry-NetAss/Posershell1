@@ -1,0 +1,16 @@
+==================================================
+Name              : Telkomsa (olivecross)
+Application       : Windows Live Mail
+Email             : olivecross@telkomsa.net
+Server            : pop3.telkomsa.net
+Server Port       : 110
+Secured           : No
+Type              : POP3
+User              : online2805549@telkomsa.net
+Password          : David@2023
+Profile           : 
+Password Strength : Very Strong
+SMTP Server       : smtp.dsl.telkomsa.net
+SMTP Server Port  : 25
+==================================================
+

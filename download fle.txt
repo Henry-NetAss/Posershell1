@@ -1,0 +1,1 @@
+Invoke-WebRequest -Uri "https://github.com/Henry-NetAss/NA/archive/refs/heads/main.zip" -OutFile "C:\na\test.zip"

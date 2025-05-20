@@ -1,0 +1,1 @@
+﻿Write-Output y|chkdsk c: /f /r /x

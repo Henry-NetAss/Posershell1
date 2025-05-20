@@ -1,0 +1,44 @@
+@echo off
+mkdir c:\NA\Installation
+cls
+cd C:\NA\Installation
+powershell -command "& {Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force}"
+cd c:\
+powershell.exe C:\UAC_Disable.ps1
+powershell.exe c:\Region_Settings.ps1
+tzutil /s "South Africa Standard Time"
+timeout 5
+powershell.exe c:\software.ps1
+timeout 60
+tv.exe /S
+timeout 5
+zoom.exe /silent
+timeout 5
+klite.exe /silent
+timeout 5
+openjdk8.msi /quiet
+timeout 5
+openjdk11.msi /quiet
+timeout 5
+chrome.exe /silent /install
+timeout 5
+eset.msi /quiet
+timeout 5
+powershell.exe c:\O365BR.ps1
+powershell -command "& {Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force}"
+powershell.exe c:\Desktop_Shortcuts.ps1
+timeout 5
+powershell.exe c:\Anydesksilent.ps1
+timeout 5
+nettime.exe /silent
+timeout 5
+tsprint.exe /silent
+timeout 5
+chrome-outlook.vbs
+timeout 15
+powershell.exe c:\Disable_Fast_Boot.ps1
+timeout 60
+powershell.exe c:\remove_printers.ps1
+powershell.exe c:\updates.ps1
+
+exit

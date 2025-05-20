@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><Policy ID="9e2e11b3-5815-47ef-9b6c-19d86bebd708" Name="Himoinsa Disable USB" Description="RGlzYWJsZSBVU0IgcG9ydHMgZm9yIFVTQiBkYXRhIHRyYW5zZmVy" Version="2.50.0.0" MinRequiredVersion="2.50.0.0" RemoteCategory="0" ExecutionType="Local" MinimumPSVersionRequired="3.0">
+  <Object ID="{223e1630-b58f-41a1-b4e9-a1395fef999a}" Type="{B6FA6D8B-EEAA-47A6-8463-7F9A4F5BBB6E}" Data="&lt;xml /&gt;" />
+  <LinkManager xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/PolicyExecutor">
+    <hashset xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" />
+  </LinkManager>
+  <Diagnostics OriginalVersion="2.97.1.1" />
+  <Activity mc:Ignorable="sads sap" x:Class="Policy Builder" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="clr-namespace:PolicyExecutor;assembly=PolicyExecutionEngine" xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <x:Members>
+      <x:Property Name="PolicyGUID" Type="InArgument(x:String)" />
+    </x:Members>
+    <sap:VirtualizedContainerService.HintSize>300,425</sap:VirtualizedContainerService.HintSize>
+    <mva:VisualBasic.Settings>Assembly references and imported namespaces serialized as XML namespaces</mva:VisualBasic.Settings>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <p:PolicySequence DisplayName="Policy Builder" sap:VirtualizedContainerService.HintSize="425,585" MinRequiredVersion="2.50.0.0" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces">
+      <p:PolicySequence.Activities>
+        <p:SetRegistryValue BaseKey_Item="{x:Null}" BaseKey_ItemProp="{x:Null}" Key_Item="{x:Null}" Key_ItemProp="{x:Null}" PropertyName_Item="{x:Null}" PropertyName_ItemProp="{x:Null}" PropertyType_Item="{x:Null}" PropertyType_ItemProp="{x:Null}" PropertyValue_Item="{x:Null}" PropertyValue_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=2.97.1.1, Culture=neutral, PublicKeyToken=null" BaseKey="HKLM" BaseKey_DisplayArg="HKLM" DisplayName="Set Registry Value" sap:VirtualizedContainerService.HintSize="389,81" Key="SYSTEM\CurrentControlSet\Services\USBSTOR" Key_DisplayArg="SYSTEM\CurrentControlSet\Services\USBSTOR" MinRequiredVersion="2.18.0.1" Moniker="bf71420a-7a33-4a43-9e42-0e1ee1615f1e" PropertyName="Start" PropertyName_DisplayArg="Start" PropertyType="DWord" PropertyType_DisplayArg="DWord" PropertyValue="4" PropertyValue_DisplayArg="4" Result="[SetRegistryValue_Result]" ResultString="[SetRegistryValue_ResultString]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" TypeName="SetRegistryValue" m_bTextLinkChange="False">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </p:SetRegistryValue>
+        <p:RebootPrompt AllowDecline_Item="{x:Null}" AllowDecline_ItemProp="{x:Null}" AllowPostponePastLimit_Item="{x:Null}" AllowPostponePastLimit_ItemProp="{x:Null}" AlwaysForeground_Item="{x:Null}" AlwaysForeground_ItemProp="{x:Null}" MaxDelayTime_Item="{x:Null}" MaxDelayTime_ItemProp="{x:Null}" Message_Item="{x:Null}" Message_ItemProp="{x:Null}" AllowDecline="False" AllowDecline_DisplayArg="true" AllowPostponePastLimit="False" AllowPostponePastLimit_DisplayArg="true" AlwaysForeground="False" AlwaysForeground_DisplayArg="true" AssemblyName="PolicyExecutionEngine, Version=2.97.1.1, Culture=neutral, PublicKeyToken=null" BodyXaml="&lt;FlowDocument PagePadding=&quot;5,0,5,0&quot; AllowDrop=&quot;True&quot; xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;&gt;&lt;Paragraph&gt;&lt;Run xml:lang=&quot;en-za&quot;&gt;Please restart your PC&lt;/Run&gt;&lt;/Paragraph&gt;&lt;/FlowDocument&gt;" BrandingJson="{}{&quot;ImageBase64&quot;:null,&quot;ImageName&quot;:&quot;&quot;,&quot;FontName&quot;:&quot;Open Sans&quot;,&quot;MainColor&quot;:&quot;#FF363636&quot;,&quot;AccentColor&quot;:&quot;#FF2E96B9&quot;,&quot;ButtonTextColor&quot;:&quot;#FFFFFFFF&quot;}" ClickResult="[RebootPrompt_ClickResult]" DisplayName="Reboot Prompt" sap:VirtualizedContainerService.HintSize="389,271" MaxDelayTime="15 min" MaxDelayTime_DisplayArg="15 min" Message_DisplayArg="" MinRequiredVersion="2.50.0.0" Moniker="ae93e63e-83fa-420d-a81a-f25f8cd07ed2" PostponeTime="[RebootPrompt_PostponeTime]" PromptSelection="[RebootPrompt_PromptSelection]" Result="[RebootPrompt_Result]" ResultString="[RebootPrompt_ResultString]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="None" TypeName="RebootPrompt" m_bTextLinkChange="False">
+          <p:RebootPrompt.Message>
+            <InArgument x:TypeArguments="x:String">
+              <Literal x:TypeArguments="x:String" Value="" />
+            </InArgument>
+          </p:RebootPrompt.Message>
+        </p:RebootPrompt>
+      </p:PolicySequence.Activities>
+      <p:PolicySequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="SetRegistryValue_ResultString" />
+        <Variable x:TypeArguments="x:Double" Name="SetRegistryValue_Result" />
+        <Variable x:TypeArguments="x:String" Name="RebootPrompt_PromptSelection" />
+        <Variable x:TypeArguments="x:String" Name="RebootPrompt_PostponeTime" />
+        <Variable x:TypeArguments="x:String" Name="RebootPrompt_ClickResult" />
+        <Variable x:TypeArguments="x:String" Name="RebootPrompt_ResultString" />
+        <Variable x:TypeArguments="x:Double" Name="RebootPrompt_Result" />
+      </p:PolicySequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </p:PolicySequence>
+  </Activity>
+</Policy>

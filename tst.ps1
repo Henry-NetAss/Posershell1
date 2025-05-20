@@ -1,0 +1,1 @@
+Get-Mailbox -ResultSize unlimited | Where-Object {$_.<Filter Phrase>}

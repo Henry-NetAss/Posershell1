@@ -1,0 +1,1 @@
+Get-ChildItem -Path C:\ -Include *.pst* -File -Recurse -ErrorAction SilentlyContinue | Where-Object 

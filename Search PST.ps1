@@ -1,0 +1,1 @@
+Get-ChildItem -Path C:\ -Include *.pdf* -File -Recurse -ErrorAction SilentlyContinue | Where-Object { $_.LastWriteTime -ge $FindDate }
